@@ -1,0 +1,59 @@
+{
+  "timestamp": "2025-12-14T18:26:37-05:00",
+  "cpu": {
+    "usage_pct": 1,
+    "cores": 1,
+    "temp_c": null
+  },
+  "load": {
+    "1m": 0.14,
+    "5m": 0.03,
+    "15m": 0.01
+  },
+  "uptime_seconds": 2612,
+  "memory": {
+    "total_kb": 990652,
+    "used_kb": 281352,
+    "avail_kb": 709300,
+    "used_pct": 28.4
+  },
+  "disk_root": {
+    "filesystem": "/dev/sda1",
+    "fstype": "ext4",
+    "size_kb": 19433104,
+    "used_kb": 1545316,
+    "avail_kb": 16875308,
+    "use_pct": 9,
+    "mount": "/"
+  },
+  "disks_smart": [
+    {
+      "device": "/dev/sda",
+      "health": "unavailable"
+    }
+  ],
+  "network": [
+    {
+      "iface": "lo",
+      "rx_bytes": 14904,
+      "rx_packets": 184,
+      "tx_bytes": 14904,
+      "tx_packets": 184
+    },
+    {
+      "iface": "enp0s3",
+      "rx_bytes": 125204147,
+      "rx_packets": 90081,
+      "tx_bytes": 2419404,
+      "tx_packets": 35205
+    },
+    {
+      "iface": "docker0",
+      "rx_bytes": 0,
+      "rx_packets": 0,
+      "tx_bytes": 0,
+      "tx_packets": 0
+    }
+  ],
+  "gpu": []
+}
