@@ -1,37 +1,37 @@
 # System Monitor Report
 
-**Generated:** 2025-12-15T15:02:15+00:00
+**Generated:** 2025-12-15T15:24:27+00:00
 
 ## CPU
 - Usage: **1%**
 - Cores: **1**
 - Temperature: **null°C**
-- Load Average: **0.78 (1m), 0.76 (5m), 0.4 (15m)**
+- Load Average: **0.09 (1m), 0.18 (5m), 0.16 (15m)**
 
 ## Memory
 - Total: 990652 KB
-- Used: 420024 KB
-- Available: 570628 KB
-- Usage: **42.4%**
+- Used: 338472 KB
+- Available: 652180 KB
+- Usage: **34.2%**
 
 ## Disk (Root)
 - Mount: /
 - Filesystem: overlay (overlay)
 - Size: 19433104 KB
-- Used: 1794684 KB
-- Available: 16625940 KB
+- Used: 1797368 KB
+- Available: 16623256 KB
 - Usage: **10%**
 
 ## Disk SMART
 - /dev/sda: NOT_SUPPORTED
 
 ## Network Interfaces
-- lo: RX=14904B (184p), TX=14904B (184p)
-- enp0s3: RX=285850839B (214251p), TX=12700855B (79690p)
-- docker0: RX=562142B (13757p), TX=51795800B (23530p)
-- br-43f30b618983: RX=13745B (49p), TX=26436B (81p)
-- veth04ba885: RX=126B (3p), TX=1490B (19p)
-- vethbc0fb78: RX=14305B (46p), TX=27206B (92p)
+- lo: RX=0B (0p), TX=0B (0p)
+- enp0s3: RX=3142880B (3666p), TX=230058B (1627p)
+- docker0: RX=5700B (111p), TX=427400B (140p)
+- br-43f30b618983: RX=50871B (164p), TX=73785B (243p)
+- veth94c9f60: RX=126B (3p), TX=1324B (18p)
+- veth7164956: RX=11129B (40p), TX=13365B (67p)
 
 ## Recent Alerts (last 20 lines)
 ```
@@ -43,4 +43,5 @@
 2025-12-15T14:49:44+00:00 [WARN] CPU usage high: 100% (>= 80%)
 2025-12-15T14:51:31+00:00 [WARN] CPU usage high: 99% (>= 80%)
 2025-12-15T15:00:50+00:00 [WARN] CPU usage high: 99% (>= 80%)
+2025-12-15T15:16:46+00:00 [WARN] CPU usage high: 98% (>= 80%)
 ```

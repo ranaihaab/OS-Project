@@ -1,28 +1,28 @@
 {
-  "timestamp": "2025-12-15T15:02:50+00:00",
+  "timestamp": "2025-12-15T15:24:51+00:00",
   "cpu": {
-    "usage_pct": 0,
+    "usage_pct": 1,
     "cores": 1,
     "temp_c": null
   },
   "load": {
-    "1m": 0.43,
-    "5m": 0.67,
-    "15m": 0.38
+    "1m": 0.13,
+    "5m": 0.19,
+    "15m": 0.16
   },
-  "uptime_seconds": 7560,
+  "uptime_seconds": 940,
   "memory": {
     "total_kb": 990652,
-    "used_kb": 420000,
-    "avail_kb": 570652,
-    "used_pct": 42.4
+    "used_kb": 338456,
+    "avail_kb": 652196,
+    "used_pct": 34.2
   },
   "disk_root": {
     "filesystem": "overlay",
     "fstype": "overlay",
     "size_kb": 19433104,
-    "used_kb": 1794684,
-    "avail_kb": 16625940,
+    "used_kb": 1797368,
+    "avail_kb": 16623256,
     "use_pct": 10,
     "mount": "/"
   },
@@ -35,45 +35,45 @@
   "network": [
     {
       "iface": "lo",
-      "rx_bytes": 14904,
-      "rx_packets": 184,
-      "tx_bytes": 14904,
-      "tx_packets": 184
+      "rx_bytes": 0,
+      "rx_packets": 0,
+      "tx_bytes": 0,
+      "tx_packets": 0
     },
     {
       "iface": "enp0s3",
-      "rx_bytes": 285855909,
-      "rx_packets": 214319,
-      "tx_bytes": 12704197,
-      "tx_packets": 79725
+      "rx_bytes": 3153200,
+      "rx_packets": 3807,
+      "tx_bytes": 238072,
+      "tx_packets": 1706
     },
     {
       "iface": "docker0",
-      "rx_bytes": 562142,
-      "rx_packets": 13757,
-      "tx_bytes": 51795800,
-      "tx_packets": 23530
+      "rx_bytes": 5700,
+      "rx_packets": 111,
+      "tx_bytes": 427400,
+      "tx_packets": 140
     },
     {
       "iface": "br-43f30b618983",
-      "rx_bytes": 13745,
-      "rx_packets": 49,
-      "tx_bytes": 26436,
-      "tx_packets": 81
+      "rx_bytes": 50871,
+      "rx_packets": 164,
+      "tx_bytes": 73785,
+      "tx_packets": 243
     },
     {
-      "iface": "veth04ba885",
+      "iface": "veth94c9f60",
       "rx_bytes": 126,
       "rx_packets": 3,
-      "tx_bytes": 1490,
-      "tx_packets": 19
+      "tx_bytes": 1324,
+      "tx_packets": 18
     },
     {
-      "iface": "vethbc0fb78",
-      "rx_bytes": 14305,
-      "rx_packets": 46,
-      "tx_bytes": 27206,
-      "tx_packets": 92
+      "iface": "veth7164956",
+      "rx_bytes": 11129,
+      "rx_packets": 40,
+      "tx_bytes": 13435,
+      "tx_packets": 68
     }
   ],
   "gpu": []
