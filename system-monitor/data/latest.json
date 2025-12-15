@@ -1,35 +1,35 @@
 {
-  "timestamp": "2025-12-14T18:26:37-05:00",
+  "timestamp": "2025-12-15T15:02:50+00:00",
   "cpu": {
-    "usage_pct": 1,
+    "usage_pct": 0,
     "cores": 1,
     "temp_c": null
   },
   "load": {
-    "1m": 0.14,
-    "5m": 0.03,
-    "15m": 0.01
+    "1m": 0.43,
+    "5m": 0.67,
+    "15m": 0.38
   },
-  "uptime_seconds": 2612,
+  "uptime_seconds": 7560,
   "memory": {
     "total_kb": 990652,
-    "used_kb": 281352,
-    "avail_kb": 709300,
-    "used_pct": 28.4
+    "used_kb": 420000,
+    "avail_kb": 570652,
+    "used_pct": 42.4
   },
   "disk_root": {
-    "filesystem": "/dev/sda1",
-    "fstype": "ext4",
+    "filesystem": "overlay",
+    "fstype": "overlay",
     "size_kb": 19433104,
-    "used_kb": 1545316,
-    "avail_kb": 16875308,
-    "use_pct": 9,
+    "used_kb": 1794684,
+    "avail_kb": 16625940,
+    "use_pct": 10,
     "mount": "/"
   },
   "disks_smart": [
     {
       "device": "/dev/sda",
-      "health": "unavailable"
+      "health": "NOT_SUPPORTED"
     }
   ],
   "network": [
@@ -42,17 +42,38 @@
     },
     {
       "iface": "enp0s3",
-      "rx_bytes": 125204147,
-      "rx_packets": 90081,
-      "tx_bytes": 2419404,
-      "tx_packets": 35205
+      "rx_bytes": 285855909,
+      "rx_packets": 214319,
+      "tx_bytes": 12704197,
+      "tx_packets": 79725
     },
     {
       "iface": "docker0",
-      "rx_bytes": 0,
-      "rx_packets": 0,
-      "tx_bytes": 0,
-      "tx_packets": 0
+      "rx_bytes": 562142,
+      "rx_packets": 13757,
+      "tx_bytes": 51795800,
+      "tx_packets": 23530
+    },
+    {
+      "iface": "br-43f30b618983",
+      "rx_bytes": 13745,
+      "rx_packets": 49,
+      "tx_bytes": 26436,
+      "tx_packets": 81
+    },
+    {
+      "iface": "veth04ba885",
+      "rx_bytes": 126,
+      "rx_packets": 3,
+      "tx_bytes": 1490,
+      "tx_packets": 19
+    },
+    {
+      "iface": "vethbc0fb78",
+      "rx_bytes": 14305,
+      "rx_packets": 46,
+      "tx_bytes": 27206,
+      "tx_packets": 92
     }
   ],
   "gpu": []

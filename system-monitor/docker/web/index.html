@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>System Monitor Dashboard</title>
+  <meta http-equiv="refresh" content="5">
+  <style>
+    body { font-family: Arial; margin: 30px; }
+    h1 { color: #2c3e50; }
+    .card { border: 1px solid #ccc; padding: 15px; margin-bottom: 15px; }
+    .ok { color: green; }
+  </style>
+</head>
+<body>
+
+<h1>System Monitor Dashboard</h1>
+
+<div id="content">Loading...</div>
+
+<p>
+  <a href="/report/report.html">View Full Report</a> |
+  <a href="/data/latest.json">Raw JSON</a> |
+  <a href="/logs/alerts.log">Alerts Log</a>
+</p>
+
+<script>
+fetch('/data/latest.json')
+  .then(r => r.json())
+  .then(d => {
+    document.getElementById('content').innerHTML = `
+      <div class="card">
+        <b>Timestamp:</b> ${d.timestamp}
+      </div>
+
+      <div class="card">
+        <b>CPU:</b> ${d.cpu.usage_pct}%<br>
+        <b>Cores:</b> ${d.cpu.cores}<br>
+        <b>Load:</b> ${d.load["1m"]}, ${d.load["5m"]}, ${d.load["15m"]}
+      </div>
+
+      <div class="card">
+        <b>Memory:</b> ${d.memory.used_pct}%
+      </div>
+
+      <div class="card">
+        <b>Disk:</b> ${d.disk_root.use_pct}% used
+      </div>
+    `;
+  })
+  .catch(() => {
+    document.getElementById('content').innerText = "Failed to load metrics";
+  });
+</script>
+
+</body>
+</html>

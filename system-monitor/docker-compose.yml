@@ -1,0 +1,48 @@
+services:
+  collector:
+    build:
+      context: .
+      dockerfile: docker/data-collector/Dockerfile
+    container_name: sm-collector
+    restart: unless-stopped
+    environment:
+      - INTERVAL=10
+    pid: host
+    network_mode: host
+    privileged: true
+    volumes:
+      - /proc:/proc:ro
+      - /sys:/sys:ro
+      - /dev:/dev
+      - ./data:/app/data
+      - ./logs:/app/logs
+
+  reporter:
+    build:
+      context: .
+      dockerfile: docker/reporter/Dockerfile
+    container_name: sm-reporter
+    restart: unless-stopped
+    environment:
+      - INTERVAL=30
+    volumes:
+      - ./data:/app/data:ro
+      - ./logs:/app/logs:ro
+      - ./report:/app/report
+    depends_on:
+      - collector
+
+  web:
+    build:
+      context: .
+      dockerfile: docker/web/Dockerfile
+    container_name: sm-web
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - ./data:/var/www/data:ro
+      - ./logs:/var/www/logs:ro
+      - ./report:/var/www/report:ro
+    depends_on:
+      - reporter
